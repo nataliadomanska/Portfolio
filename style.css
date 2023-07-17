@@ -1,0 +1,309 @@
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
+
+a {
+  cursor: pointer;
+}
+
+/* Non display class */
+
+.display-none {
+  display: none;
+}
+
+/* HEADER */
+
+header {
+  position: relative;
+  text-align: center;
+  padding: 11vw;
+  color: black;
+}
+
+.header-icons {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+.intro {
+  margin: 0 auto;
+}
+
+/* Down arrow */
+#down-arrow i.fa {
+  font-size: 64px;
+}
+
+a i.fa {
+  display: inline-block;
+  position: absolute;
+  left: 40px;
+  top: 40px;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Logo */
+.logo {
+  list-style-type: none;
+  padding-top: 0px;
+  padding-bottom: 15px;
+}
+
+.logo img {
+  display: block;
+  margin: 0 auto;
+  margin-top: 50px;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.social {
+  display: inline-block;
+  transform: translateX(-2.1vw);
+}
+
+/* Name */
+h1 {
+  color: rgb(31, 32, 65);
+  word-spacing: 0.1rem;
+  line-height: 2rem;
+  text-align: center;
+  font-size: 100px;
+}
+
+.subtitle {
+  color: black;
+  opacity: 0.5;
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+  padding: 1.5rem;
+}
+
+/* MAIN */
+
+/* Boxes */
+#boxes {
+  display: inline-block;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 100%;
+  max-width: 100vw;
+  height: 610px;
+}
+
+.box {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  margin: -1px;
+}
+
+.rotated-text-inner {
+  display: inline-block;
+  position: absolute;
+  top: 8rem;
+  left: -6rem;
+  text-align: start;
+  white-space: nowrap;
+  width: 17rem;
+  font-size: 3.5rem;
+  letter-spacing: 0.1rem;
+  color: white;
+  opacity: 0.1;
+  font-weight: bold;
+  transform: rotate(90deg);
+}
+
+.box-content {
+  text-align: center;
+  padding: 0 80px;
+}
+
+.box-content h2,
+p,
+b {
+  color: white;
+}
+
+.box-content h2 {
+  font-size: 1.5em;
+  padding: 0.8rem 0;
+}
+
+.box-content p {
+  opacity: 0.7;
+  font-size: 1.5rem;
+}
+
+.box-content b {
+  display: inline-block;
+  border: 4px solid rgba(255, 255, 255, 0.1);
+  padding: 15px 20px;
+  margin: 1rem 0;
+  letter-spacing: 0.03em;
+  word-spacing: 0.1em;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+/* FOOTER */
+
+footer {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 1.3rem 0;
+  text-align: center;
+  font-size: 1.2rem;
+  background-color: rgb(31, 32, 65);
+  color: white;
+}
+
+.footer-inner p {
+  color: rgba(255, 255, 255, 0.5);
+  padding: 0.5vw;
+}
+
+/* PANELS */
+.panel-inner {
+  border-left: 80px solid;
+}
+
+/* MEDIA QUERIES */
+@media only screen and (max-width: 600px) {
+  .header-icons {
+    display: flex;
+    flex-wrap: wrap;
+    width: 220px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  #down-arrow i.fa {
+    font-size: 55px;
+    top: 20px;
+    left: 20px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .logo img {
+    width: 220px;
+  }
+}
+
+@media only screen and (max-width: 1400px) {
+  h1 {
+    font-size: 70px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  h1 {
+    font-size: 60px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  h1 {
+    font-size: 45px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 40px;
+  }
+}
+
+@media only screen and (max-width: 1400px) {
+  .subtitle {
+    font-size: 30px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .subtitle {
+    font-size: 25px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .subtitle {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .subtitle {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  #boxes {
+    grid-template-columns: repeat(1, 1fr);
+    height: 1400px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #boxes {
+    grid-template-columns: repeat(1, 1fr);
+    height: 800px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .rotated-text-inner {
+    font-size: 2.4rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .footer-inner p {
+    font-size: 0.8rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .box-content h2 {
+    font-size: 0.7em;
+    padding: 1rem 0;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .box-content p {
+    font-size: 0.9rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .box-content b {
+    font-size: 1rem;
+    padding: 0.4rem;
+    margin: 1rem 0;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .social a img {
+    width: 70px;
+  }
+}
