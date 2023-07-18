@@ -32,9 +32,9 @@
     <div class="loading-bar"></div>
 </div>
 
-<!-- <div id="overlay"></div> -->
+<div id="overlay"></div>
 
-<main id="main">
+<div id="main">
 
         <a target="_blank" id="down-arrow" href="#"><i class="fa fa-regular fa-circle-down" style="color: #1f2041;"></i></a>
 
@@ -114,12 +114,12 @@
     </footer>
 </div>
 
-<div id="panels" class="display-none">
+<div id="panels">
     <article id="about" class="panel" >
         <div class="panel-inner" data-bordercolor="#1F2041" style="border-color: rgb(31, 32, 65);">
 
             <div class="panel-close">
-                <img src="close-window_1.png" />
+                <img src="img/close-window_1.png" />
             </div>
 
             <div class="panel-rotated-text">
@@ -130,11 +130,13 @@
                 <span class="fa fa-arrow-circle-o-up"></span>
             </div>
 
+            <img class="my-photo" src="img/my_photo.jpg" />
+
             <h2>ABOUT ME</h2>
 
             <div class="table">
                 <div class="table-row">
-                    <div>
+                    <div class="table-data">
                         <p><i class="fa fa-user"></i> <strong>Date of birth</strong></p>
                         <p>5 June 1992</p>
                     </div>
@@ -144,25 +146,29 @@
                     </div>
                 </div>
                 <div class="table-row">
-                    <div>
+                    <div class="table-data"> 
                         <p><i class="fa fa-language"></i> <strong>Languages</strong></p>
                         <p>English, Italian, Spanish, Polish</p>
                     </div>
                 </div>
             </div>
 
-            <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque quis dolorum ea eum aut accusantium, placeat, maxime vel exercitationem totam quam laboriosam dolorem tempora quos natus, esse labore incidunt. Possimus. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error facilis mollitia dolorum perferendis dicta? Voluptatum recusandae sit, itaque non vitae velit blanditiis voluptatem, ipsum commodi similique reiciendis facere corporis repellat?
+            <p class="description">
+                I am a Veterinarian and a beginner Web Developer. I changed my professional path to become a Front End
+Developer because I found that coding is my passion. I am characterized by logical thinking, the ability to
+focus on details and the capacity to perform tasks meticulously. I have already learned the basic
+technologies and my next goal is to learn React and Angular frameworks.
+
             </p>
 
         </div>
     </article>
-    <article id="resume" class="panel">
+    <article id="resume" class="panel display-none">
         <div class="panel-inner" data-bordercolor="#422040"
         style="border-color: rgb(66, 32, 64);">
 
             <div class="panel-close">
-                <img src="close-window_2.png" />
+                <img src="img/close-window_2.png" />
             </div>
 
             <div class="panel-rotated-text">
@@ -270,12 +276,12 @@
                 </div>
         </div>
     </article>
-    <article id="contact" class="panel">
+    <article id="contact" class="panel display-none">
         <div class="panel-inner" data-bordercolor="#782347"
         style="border-color: rgb(120, 35, 71);">
 
             <div class="panel-close">
-        <img src="close-window-3.png" />
+        <img src="img/close-window-3.png" />
             </div>
 
             <div class="panel-rotated-text">
