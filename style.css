@@ -12,7 +12,7 @@ html {
 body {
   font-family: "Poppins", sans-serif;
   color: white;
-  height: 100%;
+  position: relative;
 }
 
 a {
@@ -52,12 +52,11 @@ header {
 }
 
 #down-arrow {
-  /* position: absolute;
-  top: 20px;
-  left: 20px; */
-  height: 100px;
+  height: 64px;
   display: inline-block;
-  width: 100px;
+  width: 64px;
+  margin-top: 20px;
+  margin-left: 20px;
 }
 
 #down-arrow i.fa {
@@ -100,6 +99,7 @@ h1 {
   font-weight: bold;
   text-align: center;
   padding: 1.5rem;
+  margin-bottom: 8rem;
 }
 
 /* MAIN */
@@ -191,17 +191,14 @@ footer {
 
 /* PANELS */
 
-#panels {
-  height: 100%;
-}
-
 .panel-inner {
   border-left: 80px solid;
   margin-bottom: -3rem;
+  position: relative;
+  padding: 60px;
 }
 
 .panel {
-  display: relative;
   overflow-x: hidden;
   overflow-y: auto;
   background-color: white;
@@ -217,7 +214,8 @@ footer {
 
 .panel-close {
   position: absolute;
-  left: 6.5px;
+  left: -72px;
+  top: 5px;
 }
 
 .panel-close img {
@@ -227,8 +225,8 @@ footer {
 .panel-rotated-text-inner {
   display: inline-block;
   position: absolute;
-  top: 10rem;
-  left: -6rem;
+  top: 10.5rem;
+  left: -11rem;
   text-align: start;
   white-space: nowrap;
   width: 17rem;
@@ -243,7 +241,7 @@ footer {
 .panel-up {
   position: absolute;
   bottom: 0px;
-  left: 1rem;
+  left: -4rem;
 }
 
 .panel-up i {
@@ -295,7 +293,7 @@ strong {
   margin: 20px 0;
 }
 
-.panel p {
+#about .panel p {
   color: black;
   opacity: 0.5;
   font-size: 18px;
@@ -310,7 +308,116 @@ strong {
   padding: 20px;
 }
 
-#resume,
+#resume {
+  color: black;
+}
+
+#resume h2 {
+  margin-bottom: 30px;
+  padding: 0px;
+}
+
+.resume-title strong {
+  font-size: 18px;
+  color: #7c8483;
+  padding: 0px;
+}
+
+.resume-box {
+  border: 1px solid #efefef;
+  position: relative;
+  width: 100%;
+  display: block;
+  margin-bottom: 40px;
+}
+
+.resume-title {
+  background-color: #efefef;
+  padding: 30px;
+  position: relative;
+  overflow: hidden;
+}
+
+.resume-title .resume-date {
+  color: #ffffff;
+  position: absolute;
+  bottom: -23%;
+  right: -10px;
+  font-size: 80px;
+  font-family: "open-sansbold";
+  z-index: 1;
+}
+
+hr {
+  background-color: #efefef;
+  margin: 60px auto;
+  border: none;
+  height: 1px;
+  clear: both;
+  width: 100%;
+}
+
+.resume-content {
+  position: relative;
+  padding: 30px;
+}
+
+.resume-content p {
+  color: #7c8483;
+  text-align: center;
+}
+
+.skills {
+  position: relative;
+  display: block;
+  margin: 40px 0px;
+}
+
+.skillbar {
+  background-color: #ffffff;
+  border: 1px solid #efefef;
+  position: relative;
+  display: block;
+  margin-bottom: 20px;
+  width: 100%;
+  height: 47px;
+}
+
+.skillbar-title {
+  color: #7c8483;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.skillbar-bar {
+  background-color: #efefef;
+  height: 45px;
+}
+
+.skillbar-percent {
+  color: #7c8483;
+  position: absolute;
+  right: 16px;
+  top: 0;
+  height: 45px;
+  line-height: 45px;
+  opacity: 0.5;
+}
+
+.title-container {
+  position: relative;
+  display: block;
+  z-index: 2;
+}
+
+.title-container h6 {
+  color: #1f2041;
+  font-size: 22px;
+}
+
+#about,
+/* #resume, */
 #contact {
   display: none;
 }
@@ -321,7 +428,7 @@ strong {
   width: 100%;
   height: 100%;
   background-color: rgba(7, 2, 13, 0.7);
-  backdrop-filter: blur(3px);
+  backdrop-filter: blur(2px);
   z-index: 5;
 } */
 
@@ -398,10 +505,10 @@ strong {
   }
 }
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1200px) {
   #boxes {
     grid-template-columns: repeat(1, 1fr);
-    height: 1400px;
+    height: 1200px;
   }
 }
 
