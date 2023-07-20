@@ -5,13 +5,22 @@
   margin: 0;
 }
 
+html {
+  height: 100%;
+}
+
 body {
   font-family: "Poppins", sans-serif;
   color: white;
+  height: 100%;
 }
 
 a {
   cursor: pointer;
+}
+
+#main {
+  position: relative;
 }
 
 /* Non display class */
@@ -25,7 +34,7 @@ a {
 header {
   position: relative;
   text-align: center;
-  padding: 11vw;
+  padding: 3vw;
   color: black;
 }
 
@@ -42,17 +51,17 @@ header {
   margin: 0 auto;
 }
 
-/* Down arrow */
-#down-arrow i.fa {
-  font-size: 64px;
+#down-arrow {
+  /* position: absolute;
+  top: 20px;
+  left: 20px; */
+  height: 100px;
+  display: inline-block;
+  width: 100px;
 }
 
-a i.fa {
-  display: inline-block;
-  position: absolute;
-  left: 40px;
-  top: 40px;
-  -webkit-font-smoothing: antialiased;
+#down-arrow i.fa {
+  font-size: 64px;
 }
 
 /* Logo */
@@ -65,7 +74,7 @@ a i.fa {
 .logo img {
   display: block;
   margin: 0 auto;
-  margin-top: 50px;
+  margin-top: 15px;
   border-radius: 50%;
   text-align: center;
 }
@@ -181,17 +190,21 @@ footer {
 }
 
 /* PANELS */
+
+#panels {
+  height: 100%;
+}
+
 .panel-inner {
   border-left: 80px solid;
+  margin-bottom: -3rem;
 }
 
 .panel {
   display: relative;
-  overflow: scroll;
+  overflow-x: hidden;
+  overflow-y: auto;
   background-color: white;
-}
-
-#about {
   position: fixed;
   top: 0px;
   height: 100%;
@@ -207,6 +220,10 @@ footer {
   left: 6.5px;
 }
 
+.panel-close img {
+  opacity: 0.2;
+}
+
 .panel-rotated-text-inner {
   display: inline-block;
   position: absolute;
@@ -218,20 +235,34 @@ footer {
   font-size: 3.5rem;
   letter-spacing: 0.1rem;
   color: white;
-  opacity: 0.1;
+  opacity: 0.2;
   font-weight: bold;
   transform: rotate(90deg);
+}
+
+.panel-up {
+  position: absolute;
+  bottom: 0px;
+  left: 1rem;
+}
+
+.panel-up i {
+  display: block;
+  font-size: 50px;
+  text-align: center;
+  opacity: 0.2;
+  margin: 20px 0;
 }
 
 .my-photo {
   display: block;
   margin: 0 auto;
-  margin-bottom: 20px;
+  padding: 20px 0;
 }
 
 h2 {
   color: #1f2041;
-  font-size: 30px;
+  font-size: 40px;
   margin-bottom: 50px;
   padding: 20px;
 }
@@ -244,6 +275,7 @@ h2 {
   display: table;
   border-collapse: collapse;
   margin: 0 auto;
+  text-align: center;
 }
 
 .table-row {
@@ -256,7 +288,7 @@ h2 {
 
 strong {
   font-weight: bolder;
-  font-size: 25px;
+  font-size: 20px;
 }
 
 .description {
@@ -266,20 +298,36 @@ strong {
 .panel p {
   color: black;
   opacity: 0.5;
-  font-size: 20px;
+  font-size: 18px;
+}
+
+.table-data p,
+strong {
+  padding: 10px;
+}
+
+.description {
   padding: 20px;
 }
 
-#overlay {
+#resume,
+#contact {
+  display: none;
+}
+/* #overlay {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(7, 2, 13, 0.7);
   backdrop-filter: blur(3px);
   z-index: 5;
-}
+} */
+
+/* #main {
+  display: none;
+} */
 /* MEDIA QUERIES */
 @media only screen and (max-width: 600px) {
   .header-icons {
