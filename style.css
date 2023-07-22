@@ -1,3 +1,5 @@
+/* GENERAL */
+
 * {
   box-sizing: border-box;
   text-decoration: none;
@@ -19,14 +21,11 @@ a {
   cursor: pointer;
 }
 
+/* MAIN DIV */
+
 #main {
   position: relative;
-}
-
-/* Non display class */
-
-.display-none {
-  display: none;
+  height: 100%;
 }
 
 /* HEADER */
@@ -83,7 +82,7 @@ header {
   transform: translateX(-2.1vw);
 }
 
-/* Name */
+/* My name */
 h1 {
   color: rgb(31, 32, 65);
   word-spacing: 0.1rem;
@@ -102,16 +101,15 @@ h1 {
   margin-bottom: 8rem;
 }
 
-/* MAIN */
+/* BOXES */
 
-/* Boxes */
 #boxes {
   display: inline-block;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   width: 100%;
   max-width: 100vw;
-  height: 610px;
+  height: 440px;
 }
 
 .box {
@@ -127,11 +125,11 @@ h1 {
   display: inline-block;
   position: absolute;
   top: 8rem;
-  left: -6rem;
+  left: -7rem;
   text-align: start;
   white-space: nowrap;
   width: 17rem;
-  font-size: 3.5rem;
+  font-size: 2.8rem;
   letter-spacing: 0.1rem;
   color: white;
   opacity: 0.1;
@@ -151,13 +149,13 @@ b {
 }
 
 .box-content h2 {
-  font-size: 1.5em;
-  padding: 0.8rem 0;
+  font-size: 1.3em;
+  padding: 0px;
 }
 
 .box-content p {
   opacity: 0.7;
-  font-size: 1.5rem;
+  font-size: 1.1rem;
 }
 
 .box-content b {
@@ -168,7 +166,7 @@ b {
   letter-spacing: 0.03em;
   word-spacing: 0.1em;
   font-weight: bold;
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 
 /* FOOTER */
@@ -178,15 +176,16 @@ footer {
   display: block;
   width: 100%;
   padding: 1.3rem 0;
-  text-align: center;
-  font-size: 1.2rem;
+  font-size: 0.9rem;
   background-color: rgb(31, 32, 65);
   color: white;
+  margin: -1px 0px;
 }
 
 .footer-inner p {
   color: rgba(255, 255, 255, 0.5);
   padding: 0.5vw;
+  text-align: center;
 }
 
 /* PANELS */
@@ -195,7 +194,7 @@ footer {
   border-left: 80px solid;
   margin-bottom: -3rem;
   position: relative;
-  padding: 60px;
+  padding: 40px;
 }
 
 .panel {
@@ -211,6 +210,29 @@ footer {
   display: block;
   width: 800px;
 }
+
+.table {
+  margin: 20px 0;
+  margin-bottom: 70px;
+  border: 1px solid #efefef;
+  width: 50%;
+  display: table;
+  border-collapse: collapse;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.table-row {
+  display: table-row;
+}
+
+strong {
+  font-weight: bolder;
+  font-size: 20px;
+  color: #7c8483;
+}
+
+/* Left border elements */
 
 .panel-close {
   position: absolute;
@@ -252,45 +274,24 @@ footer {
   margin: 20px 0;
 }
 
+/* #ABOUT panel */
+
 .my-photo {
   display: block;
   margin: 0 auto;
   padding: 20px 0;
 }
 
-h2 {
+#about h2 {
   color: #1f2041;
   font-size: 40px;
   margin-bottom: 50px;
   padding: 20px;
 }
 
-.table {
-  margin: 20px 0;
-  margin-bottom: 70px;
-  border: 1px solid #efefef;
-  width: 50%;
-  display: table;
-  border-collapse: collapse;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.table-row {
-  display: table-row;
-}
-
-.table-data {
-  border: 1px solid #efefef;
-}
-
-strong {
-  font-weight: bolder;
-  font-size: 20px;
-}
-
 .description {
-  margin: 20px 0;
+  margin: 40px 0 0 0;
+  color: #7c8483;
 }
 
 #about .panel p {
@@ -299,14 +300,17 @@ strong {
   font-size: 18px;
 }
 
+.table-data {
+  border: 1px solid #efefef;
+}
+
 .table-data p,
 strong {
   padding: 10px;
+  color: #7c8483;
 }
 
-.description {
-  padding: 20px;
-}
+/* #RESUME panel */
 
 #resume {
   color: black;
@@ -338,6 +342,17 @@ strong {
   overflow: hidden;
 }
 
+.title-container {
+  position: relative;
+  display: block;
+  z-index: 2;
+}
+
+.title-container h6 {
+  color: #1f2041;
+  font-size: 22px;
+}
+
 .resume-title .resume-date {
   color: #ffffff;
   position: absolute;
@@ -367,6 +382,8 @@ hr {
   text-align: center;
 }
 
+/* skillbars */
+
 .skills {
   position: relative;
   display: block;
@@ -390,12 +407,18 @@ hr {
   left: 0;
 }
 
+.skillbar-title span {
+  padding: 0 15px;
+  display: block;
+  font-weight: bolder;
+}
+
 .skillbar-bar {
   background-color: #efefef;
   height: 45px;
 }
 
-.skillbar-percent {
+.skill-bar-percent {
   color: #7c8483;
   position: absolute;
   right: 16px;
@@ -405,23 +428,21 @@ hr {
   opacity: 0.5;
 }
 
-.title-container {
-  position: relative;
-  display: block;
-  z-index: 2;
-}
+/* #CONTACT panel */
 
-.title-container h6 {
-  color: #1f2041;
-  font-size: 22px;
-}
-
+/* TEMPORARY */
 #about,
-/* #resume, */
 #contact {
   display: none;
 }
-/* #overlay {
+
+/* WEBSITE INTERACTIVITY */
+
+.display-none {
+  display: none;
+}
+
+.overlay--active {
   position: absolute;
   top: 0;
   left: 0;
@@ -430,11 +451,24 @@ hr {
   background-color: rgba(7, 2, 13, 0.7);
   backdrop-filter: blur(2px);
   z-index: 5;
-} */
+}
 
-/* #main {
-  display: none;
-} */
+/* add to #main */
+.move-left {
+  transform: translateX(-50rem);
+  transition: 0.6s;
+}
+
+.mov-right {
+  transform: translateX(50rem);
+  transition: 0.6s;
+}
+
+/* Add to body tag */
+.overflow-hidden {
+  overflow: hidden;
+}
+
 /* MEDIA QUERIES */
 @media only screen and (max-width: 600px) {
   .header-icons {
@@ -521,7 +555,7 @@ hr {
 
 @media only screen and (max-width: 600px) {
   .rotated-text-inner {
-    font-size: 2.4rem;
+    font-size: 1.7rem;
   }
 }
 

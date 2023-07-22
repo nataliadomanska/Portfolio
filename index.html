@@ -20,7 +20,7 @@
     
 </head>
 
-<body>
+<body class="overflow-hidden">
 <div id="page-loading" class="display-none">
     <div class="loading-table">
 
@@ -32,9 +32,9 @@
     <div class="loading-bar"></div>
 </div>
 
-<div id="overlay"></div>
+<div id="overlay" class="overlay--active"></div>
 
-<div id="main">
+<div id="main" class="move-left">
 
        <div><a target="_blank" id="down-arrow" href="#"><i class="fa fa-regular fa-circle-down" style="color: #1f2041;"></i></a></div>
 
@@ -130,7 +130,7 @@
                 <i class="fa-regular fa-circle-up fa" style="color: #ffffff;"></i>
             </div>
 
-            <img class="my-photo" src="img/my_photo_about.jpg" width="580px" />
+            <img class="my-photo" src="img/my_photo_about.jpg" height="580px" />
 
             <h2>ABOUT ME</h2>
 
@@ -231,41 +231,43 @@ technologies and my next goal is to learn React and Angular frameworks.
             <h2>SKILLS</h2>
 
             <div class="skills">
-                
-                <div class="skillbar" data-percent="70%">
-                    <div class="killbar-title"><span>CSS3</span>
-                    </div>
-                    <div class="skillbar-bar" style="width: 70%;"></div>
-                    <div class="skill-bar-percent">70%</div>
-                </div>
-                <div class="skillbar" data-percent="70%">
-                    <div class="skillbar-title"><span>Pure JavaScript</span>
-                    </div>
-                    <div class="skillbar-bar" style="width: 70%;"></div>
-                    <div class="skill-bar-percent">70%</div>
-                </div>
                 <div class="skillbar" data-percent="90%">
                     <div class="skillbar-title"><span>HTML5</span>
                     </div>
                     <div class="skillbar-bar" style="width: 90%;"></div>
                     <div class="skill-bar-percent">90%</div>
                 </div>
+                
+                <div class="skillbar" data-percent="80%">
+                    <div class="skillbar-title"><span>CSS3</span>
+                    </div>
+                    <div class="skillbar-bar" style="width: 80%;"></div>
+                    <div class="skill-bar-percent">80%</div>
+                </div>
+                <div class="skillbar" data-percent="80%">
+                    <div class="skillbar-title"><span>Pure JavaScript</span>
+                    </div>
+                    <div class="skillbar-bar" style="width: 80%;"></div>
+                    <div class="skill-bar-percent">80%</div>
+                </div>
+                
         </div>
     </article>
     <article id="contact" class="panel display-none">
         <div class="panel-inner" data-bordercolor="#782347"
         style="border-color: rgb(120, 35, 71);">
 
-            <div class="panel-close">
-        <img src="img/close-window-3.png" />
-            </div>
+        <div class="panel-close">
+            <img src="img/close-window-white.png" />
+        </div>
 
             <div class="panel-rotated-text">
                 <span class="panel-rotated-text-inner">CONTACT</span>
             </div>
 
+            
             <div class="panel-up">
-                <span class="fa fa-arrow-circle-o-up"></span>
+                <i class="fa-regular fa-circle-up fa" style="color: #ffffff;"></i>
             </div>
 
             <h2>CONTACT ME</h2>
