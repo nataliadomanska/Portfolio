@@ -253,7 +253,7 @@ technologies and my next goal is to learn React and Angular frameworks.
                 
         </div>
     </article>
-    <article id="contact" class="panel display-none">
+    <article id="contact" class="panel">
         <div class="panel-inner" data-bordercolor="#782347"
         style="border-color: rgb(120, 35, 71);">
 
@@ -264,44 +264,22 @@ technologies and my next goal is to learn React and Angular frameworks.
             <div class="panel-rotated-text">
                 <span class="panel-rotated-text-inner">CONTACT</span>
             </div>
-
-            
-            <div class="panel-up">
-                <i class="fa-regular fa-circle-up fa" style="color: #ffffff;"></i>
-            </div>
-
+            <div>
             <h2>CONTACT ME</h2>
             <div class="table">
                 <div class="table-row">
-                    <div>
-                        <p><i class="fa fa-phone-square"></i> <strong>Phone</strong></p>
-                        <p>+48 508 226 431</p>
-                        <p>+39 328 200 8402</p>
+                    <div class="cell-top">
+                        <p><i class="fa-solid fa-square-phone" style="color: #7c8483;"></i> <strong>Phone</strong></p>
+                        <p><a href="tel:+48 508 226 431">+48 508 226 431</a><br /><a href="tel:+39 328 200 8402">+39 328 200 8402</a></p>
                     </div>
-                    <div>
-                        <p><i class="fa fa-envelope"></i> <strong>E-mail</strong></p>
+                    <div class="cell-bottom">
+                        <p><i class="fa-solid fa-envelope" style="color: #7c8483;"></i> <strong>E-mail</strong></p>
                         <p><a href="mailto:arashkevich25@gmail.com">nataliaidomanska@gmail.com</a></p>
                     </div>
                 </div>
             </div>
-            <p>You can contact me via email, phone or contact form below.</p>
-            <hr/>
-            <h2>DROP ME A LINE</h2>
-
-            <form id="ajax-form" action="mailer.php" method="post">
-                <label>Full name</label>
-                <input type="text" name="sendername" id="sendername" required="required" maxlength="50" />
-                <label>Phone Number</label>
-                <input type="text" name="senderphone" id="senderphone" maxlength="50" />
-                <label>Email address</label>
-                <input type="email" name="senderemail" id="senderemail" required="required" maxlength="50" />
-                <label>Message</label>
-                <textarea name="sendermessage" id="sendermessage" required="required"></textarea>
-                <div class="submit-container">
-                    <input type="submit" class="isg-button" value="Send Message" /> <i id="ajax-spinner" class="fa fa-spinner fa-spin fa-3x fa-fw"></i>
-                </div>
-            </form>
-            <div id="form-messages"></div>
+            </div>
+            
         </div>
     </article>
 </main>

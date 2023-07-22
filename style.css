@@ -232,6 +232,20 @@ strong {
   color: #7c8483;
 }
 
+.panel-inner h2 {
+  color: #1f2041;
+  font-size: 40px;
+}
+
+hr {
+  background-color: #efefef;
+  margin: 60px auto;
+  border: none;
+  height: 1px;
+  clear: both;
+  width: 100%;
+}
+
 /* Left border elements */
 
 .panel-close {
@@ -283,8 +297,6 @@ strong {
 }
 
 #about h2 {
-  color: #1f2041;
-  font-size: 40px;
   margin-bottom: 50px;
   padding: 20px;
 }
@@ -363,15 +375,6 @@ strong {
   z-index: 1;
 }
 
-hr {
-  background-color: #efefef;
-  margin: 60px auto;
-  border: none;
-  height: 1px;
-  clear: both;
-  width: 100%;
-}
-
 .resume-content {
   position: relative;
   padding: 30px;
@@ -430,9 +433,65 @@ hr {
 
 /* #CONTACT panel */
 
+#contact .panel-inner {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#contact h2 {
+  text-align: center;
+}
+
+#contact p {
+  color: #7c8483;
+  font-size: 16px;
+}
+
+#contact .table {
+  width: 100%;
+  margin: 40px 0;
+}
+
+.table-row .cell-top,
+.table-row .cell-bottom {
+  padding: 20px;
+}
+
+.cell-top i,
+.cell-bottom i {
+  padding: 0 5px 0 0;
+  font-size: 18px;
+}
+
+.table-row .cell-top {
+  border-bottom: 1px solid #efefef;
+}
+
+.table .table-row div p strong {
+  font-size: 18px;
+  font-weight: bolder;
+  padding: 0;
+}
+
+.table-row div p:last-child {
+  font-size: 20px;
+  padding-top: 10px;
+}
+
+.table-row div p:last-child a {
+  color: #1f2041;
+  font-size: 15px;
+}
+
+.table-row .cell-bottom p:last-child {
+  padding: 15px 0;
+}
+
 /* TEMPORARY */
 #about,
-#contact {
+#resume {
   display: none;
 }
 
