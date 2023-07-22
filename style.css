@@ -192,9 +192,9 @@ footer {
 
 .panel-inner {
   border-left: 80px solid;
-  margin-bottom: -3rem;
   position: relative;
   padding: 40px;
+  min-height: 100%;
 }
 
 .panel {
@@ -212,10 +212,9 @@ footer {
 }
 
 .table {
-  margin: 20px 0;
-  margin-bottom: 70px;
+  margin: 20px 0 70px 0;
   border: 1px solid #efefef;
-  width: 50%;
+  width: 100%;
   display: table;
   border-collapse: collapse;
   margin: 0 auto;
@@ -250,12 +249,13 @@ hr {
 
 .panel-close {
   position: absolute;
-  left: -72px;
-  top: 5px;
+  left: -4.5rem;
+  top: 0px;
 }
 
 .panel-close img {
   opacity: 0.2;
+  text-align: center;
 }
 
 .panel-rotated-text-inner {
@@ -285,7 +285,6 @@ hr {
   font-size: 50px;
   text-align: center;
   opacity: 0.2;
-  margin: 20px 0;
 }
 
 /* #ABOUT panel */
@@ -304,6 +303,7 @@ hr {
 .description {
   margin: 40px 0 0 0;
   color: #7c8483;
+  font-size: 16px;
 }
 
 #about .panel p {
@@ -491,7 +491,7 @@ strong {
 
 /* TEMPORARY */
 #about,
-#resume {
+#contact {
   display: none;
 }
 
@@ -648,5 +648,159 @@ strong {
 @media only screen and (max-width: 600px) {
   .social a img {
     width: 70px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .panel-inner {
+    border: 0px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .panel-rotated-text {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  #about .panel-close {
+    right: 0px;
+    left: 0px;
+    width: 100%;
+    height: 65px;
+    background-color: #1f2041;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  #resume .panel-close {
+    right: 0px;
+    left: 0px;
+    width: 100%;
+    height: 65px;
+    background-color: rgb(66, 32, 64);
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  #contact .panel-close {
+    right: 0px;
+    left: 0px;
+    width: 100%;
+    height: 65px;
+    background-color: rgb(120, 35, 71);
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .panel-close img {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .panel-up {
+    right: 0px;
+    left: 0px;
+    width: 100%;
+    height: 70px;
+    padding-top: 8px;
+    margin-bottom: -5px;
+    background-color: #1f2041;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  #resume .panel-up {
+    background-color: rgb(66, 32, 64);
+  }
+}
+
+@media only screen and (min-width: 480px) {
+  .panel-up {
+    margin-bottom: 10px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  #contact .panel-inner {
+    border-bottom: 65px solid rgb(120, 35, 71);
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .my-photo {
+    width: 90%;
+    height: 90%;
+    margin-top: 15px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .panel {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  #about h2 {
+    font-size: 30px;
+    margin: 0;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  #contact h2 {
+    font-size: 30px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  #resume h2 {
+    font-size: 30px;
+    margin-top: 50px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  #resume h6 {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  #resume strong {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  #resume .resume-date {
+    font-size: 60px;
+    bottom: -15%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .skills {
+    margin-bottom: 60px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  #about h2 {
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .description {
+    font-size: 16px;
+    margin-bottom: 40px;
   }
 }
