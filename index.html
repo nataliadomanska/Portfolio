@@ -20,8 +20,8 @@
     
 </head>
 
-<body class="overflow-hidden">
-<div id="page-loading" class="display-none">
+<body>
+<div id="page-loading" class="hidden">
     <div class="loading-table">
 
         <div class="loading-cell">
@@ -32,9 +32,9 @@
     <div class="loading-bar"></div>
 </div>
 
-<div id="overlay" class="overlay--active"></div>
+<div id="overlay"></div>
 
-<div id="main" class="move-left">
+<div id="main">
 
        <div><a target="_blank" id="down-arrow" href="#"><i class="fa fa-regular fa-circle-down" style="color: #1f2041;"></i></a></div>
 
@@ -63,9 +63,11 @@
         <div class="box box-1" data-bgcolor="#1F2041" style="background-color: rgb(31, 32, 65);">
             <a href="#about" id="about-link" class="panel-open">
                 <div class="box-content">
+                    <div class="content_move">
                     <h2>ABOUT ME</h2>
                     <p>This is where you can learn more about me.</p>
-                    <b>VIEW MORE</b>
+                    <b class="view_more__btn">VIEW MORE</b>
+                    </div>
                     <div class="rotated-text">
                         <span class="rotated-text-inner">
                             ABOUT ME
@@ -78,9 +80,11 @@
         <div class="box box-2" data-bgcolor="#422040" style="background-color: rgb(66, 32, 64);">
             <a href="#resume" id="resume-link" class="panel-open">
                 <div class="box-content">
+                    <div class="content_move">
                     <h2>RESUME</h2>
                     <p>My business experience and education.</p>
-                    <b>VIEW MORE</b>
+                    <b class="view_more__btn">VIEW MORE</b>
+                    </div>
                     <div class="rotated-text">
                         <span class="rotated-text-inner">
                             RESUME
@@ -93,9 +97,11 @@
         <div class="box box-3" data-bgcolor="#782347" style="background-color: rgb(120, 35, 71);">
             <a href="#contact" id="contact-link" class="panel-open">
                 <div class="box-content">
+                    <div class="content_move">
                     <h2>CONTACT</h2>
                     <p>There are many ways of contacting me.</p>
-                    <b>VIEW MORE</b>
+                    <b class="view_more__btn">VIEW MORE</b>
+                    </div>
                     <div class="rotated-text">
                         <span class="rotated-text-inner">
                             CONTACT
@@ -115,7 +121,7 @@
 </div>
 
 <div id="panels">
-    <article id="about" class="panel">
+    <article id="about" class="panel hidden">
         <div class="panel-inner" data-bordercolor="#1F2041" style="border-color: rgb(31, 32, 65);">
 
             <div class="panel-close">
@@ -165,7 +171,7 @@ technologies and my next goal is to learn React and Angular frameworks.
 
         </div>
     </article>
-    <article id="resume" class="panel">
+    <article id="resume" class="panel hidden">
         <div class="panel-inner" data-bordercolor="#422040"
         style="border-color: rgb(66, 32, 64);">
 
@@ -253,7 +259,7 @@ technologies and my next goal is to learn React and Angular frameworks.
                 
         </div>
     </article>
-    <article id="contact" class="panel">
+    <article id="contact" class="panel hidden">
         <div class="panel-inner" data-bordercolor="#782347"
         style="border-color: rgb(120, 35, 71);">
 
@@ -279,10 +285,9 @@ technologies and my next goal is to learn React and Angular frameworks.
                 </div>
             </div>
             </div>
-            
         </div>
     </article>
-</main>
+</div>
 <!--JAVASCRIPT FILES-->
 <script type="text/javascript" src="script.js"></script>
 </body>

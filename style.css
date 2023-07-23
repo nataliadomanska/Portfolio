@@ -205,7 +205,7 @@ footer {
   top: 0px;
   height: 100%;
   z-index: 99999;
-  right: 0px;
+  right: -800px;
   left: auto;
   display: block;
   width: 800px;
@@ -489,16 +489,20 @@ strong {
   padding: 15px 0;
 }
 
-/* TEMPORARY */
-#about,
-#contact {
+/* WEBSITE INTERACTIVITY */
+
+.hidden {
   display: none;
 }
 
-/* WEBSITE INTERACTIVITY */
+.view-more_hidden {
+  opacity: 0;
+  transition: 0.5s;
+}
 
-.display-none {
-  display: none;
+.view-more_visible {
+  opacity: 1;
+  transition: 0.5s;
 }
 
 .overlay--active {
@@ -528,6 +532,24 @@ strong {
   overflow: hidden;
 }
 
+.move-up {
+  transform: translateY(-25px);
+  transition: 0.3s;
+}
+
+.move-down {
+  transform: translateY(0px);
+  transition: 0.3s;
+}
+
+.panel-open {
+  pointer-events: none;
+}
+
+.panel-move-left {
+  transform: translateX(-800px);
+  transition: 2s;
+}
 /* MEDIA QUERIES */
 @media only screen and (max-width: 600px) {
   .header-icons {
