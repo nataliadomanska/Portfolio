@@ -514,6 +514,7 @@ strong {
   background-color: rgba(7, 2, 13, 0.7);
   backdrop-filter: blur(2px);
   z-index: 5;
+  transition: 0.2s 0.5s;
 }
 
 /* add to #main */
@@ -522,8 +523,8 @@ strong {
   transition: 0.6s;
 }
 
-.mov-right {
-  transform: translateX(50rem);
+.move-right {
+  transform: translateX(0);
   transition: 0.6s;
 }
 
@@ -548,8 +549,14 @@ strong {
 
 .panel-move-left {
   transform: translateX(-800px);
-  transition: 2s;
+  transition: 0.6s;
 }
+
+.panel-move-right {
+  transform: translateX(0);
+  transition: 0.6s;
+}
+
 /* MEDIA QUERIES */
 @media only screen and (max-width: 600px) {
   .header-icons {
