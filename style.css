@@ -703,6 +703,12 @@ strong {
   }
 }
 
+@media only screen and (max-width: 450px) {
+  .social a img {
+    width: 50px;
+  }
+}
+
 @media only screen and (max-width: 480px) {
   .panel-inner {
     border: 0px;
