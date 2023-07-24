@@ -19,6 +19,7 @@ const main = document.getElementById("main");
 const body = document.body;
 const viewMoreBtn = document.querySelectorAll(".view_more__btn");
 const panelCloseEl = document.querySelectorAll(".panel-close img");
+const yearField = document.getElementById("year");
 
 // FUNCTIONS
 
@@ -134,6 +135,16 @@ const overlayActive = function () {
   main.classList.add("move-left");
   body.classList.add("overflow-hidden");
 };
+
+// Year display
+
+const displayYear = function () {
+  const now = new Date();
+  const year = now.getFullYear();
+
+  yearField.textContent = `${year}`;
+};
+displayYear();
 
 // EVENT LISTENERS
 

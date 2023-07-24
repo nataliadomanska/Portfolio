@@ -33,7 +33,7 @@ a {
 header {
   position: relative;
   text-align: center;
-  padding: 3vw;
+  padding: 0.2rem;
   color: black;
 }
 
@@ -51,15 +51,15 @@ header {
 }
 
 #down-arrow {
-  height: 64px;
+  height: 50px;
   display: inline-block;
-  width: 64px;
+  width: 50px;
   margin-top: 20px;
   margin-left: 20px;
 }
 
 #down-arrow i.fa {
-  font-size: 64px;
+  font-size: 50px;
 }
 
 /* Logo */
@@ -86,7 +86,6 @@ header {
 h1 {
   color: rgb(31, 32, 65);
   word-spacing: 0.1rem;
-  line-height: 2rem;
   text-align: center;
   font-size: 100px;
 }
@@ -97,8 +96,8 @@ h1 {
   font-size: 50px;
   font-weight: bold;
   text-align: center;
-  padding: 1.5rem;
-  margin-bottom: 8rem;
+  padding: 1vw;
+  margin-bottom: 3.4rem;
 }
 
 /* BOXES */
@@ -567,7 +566,7 @@ strong {
 }
 @media only screen and (max-width: 600px) {
   #down-arrow i.fa {
-    font-size: 55px;
+    font-size: 40px;
     top: 20px;
     left: 20px;
   }
@@ -603,6 +602,18 @@ strong {
   }
 }
 
+@media only screen and (max-width: 450px) {
+  h1 {
+    font-size: 30px;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  h1 {
+    font-size: 20px;
+  }
+}
+
 @media only screen and (max-width: 1400px) {
   .subtitle {
     font-size: 30px;
@@ -627,17 +638,29 @@ strong {
   }
 }
 
+@media only screen and (max-width: 450px) {
+  .subtitle {
+    font-size: 17px;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .subtitle {
+    font-size: 16px;
+  }
+}
+
 @media screen and (max-width: 1200px) {
   #boxes {
     grid-template-columns: repeat(1, 1fr);
-    height: 1200px;
+    height: 1400px;
   }
 }
 
 @media screen and (max-width: 600px) {
   #boxes {
     grid-template-columns: repeat(1, 1fr);
-    height: 800px;
+    height: 1000px;
   }
 }
 
