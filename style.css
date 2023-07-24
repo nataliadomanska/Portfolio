@@ -169,25 +169,6 @@ b {
   font-size: 1rem;
 }
 
-/* FOOTER */
-
-footer {
-  position: relative;
-  display: block;
-  width: 100%;
-  padding: 1.3rem 0;
-  font-size: 0.9rem;
-  background-color: rgb(31, 32, 65);
-  color: white;
-  margin: -1px 0px;
-}
-
-.footer-inner p {
-  color: rgba(255, 255, 255, 0.5);
-  padding: 0.5vw;
-  text-align: center;
-}
-
 /* PANELS */
 
 .panel-inner {
