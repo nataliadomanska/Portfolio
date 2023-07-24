@@ -97,7 +97,7 @@ h1 {
   font-weight: bold;
   text-align: center;
   padding: 1vw;
-  margin-bottom: 3.4rem;
+  margin-bottom: 2.5rem;
 }
 
 /* BOXES */
@@ -660,7 +660,7 @@ strong {
 @media screen and (max-width: 600px) {
   #boxes {
     grid-template-columns: repeat(1, 1fr);
-    height: 1200px;
+    height: 1000px;
   }
 }
 
