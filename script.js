@@ -33,6 +33,11 @@ const openPanel = function () {
     this.classList.add("panel-move-left");
   };
   setTimeout(panelMoveLeft, 100);
+
+  overlay.classList.add("overlay--active");
+  main.classList.remove("move-right");
+  main.classList.add("move-left");
+  body.classList.add("overflow-hidden");
 };
 
 // Close panels
@@ -95,15 +100,6 @@ const moveDown = function (e) {
   currentViewMoreBtn.classList.remove("view-more_visible");
 };
 
-// Overlay active
-
-const overlayActive = function () {
-  overlay.classList.add("overlay--active");
-  main.classList.remove("move-right");
-  main.classList.add("move-left");
-  body.classList.add("overflow-hidden");
-};
-
 // Year display
 
 const displayYear = function () {
@@ -116,19 +112,17 @@ displayYear();
 
 // EVENT LISTENERS
 
-// Panels opening and overlay appearing
-box1.addEventListener("click", openPanel.bind(aboutPanel));
-box2.addEventListener("click", openPanel.bind(resumePanel));
-box3.addEventListener("click", openPanel.bind(contactPanel));
-
-boxes.addEventListener("click", overlayActive);
-
 // Box content moving up and down
 
 boxes.addEventListener("mouseover", moveUp);
 boxes.addEventListener("mouseout", moveDown);
 
-// Closing panels
+// Panels opening
+box1.addEventListener("click", openPanel.bind(aboutPanel));
+box2.addEventListener("click", openPanel.bind(resumePanel));
+box3.addEventListener("click", openPanel.bind(contactPanel));
+
+// Panels closing
 
 panelCloseEl.forEach((el) =>
   el.addEventListener("mouseover", panelCloseElActive)
