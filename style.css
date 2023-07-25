@@ -545,7 +545,6 @@ strong {
 .panel-open {
   pointer-events: none;
 }
-
 .panel-move-left {
   transform: translateX(-800px);
   transition: 0.6s;
@@ -860,5 +859,11 @@ strong {
   .description {
     font-size: 16px;
     margin-bottom: 40px;
+  }
+}
+
+@media only screen and (min-width: 1100px) {
+  .view-more_init {
+    opacity: 0;
   }
 }

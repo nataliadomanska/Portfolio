@@ -23,44 +23,13 @@ const yearField = document.getElementById("year");
 
 // FUNCTIONS
 
-const init = function () {
-  viewMoreBtn.forEach(function (btn) {
-    btn.classList.add("view-more_hidden");
-  });
-};
-init();
-
 // Open panels
 
-// const openPanel = function () {
-//   panels.forEach(function(p) {
-//     p.classList.remove("hidden");
-//     p.classList.add("panel-move-left");
-//   })
-// };
-
-const openAboutPanel = function () {
-  aboutPanel.classList.remove("hidden");
-  aboutPanel.classList.remove("panel-move-right");
-  const panelMoveLeft = function () {
-    aboutPanel.classList.add("panel-move-left");
-  };
-  setTimeout(panelMoveLeft, 100);
-};
-const openResumePanel = function () {
-  resumePanel.classList.remove("hidden");
-  resumePanel.classList.remove("panel-move-right");
-  const panelMoveLeft = function () {
-    resumePanel.classList.add("panel-move-left");
-  };
-  setTimeout(panelMoveLeft, 100);
-};
-
-const openContactPanel = function () {
-  contactPanel.classList.remove("hidden");
-  contactPanel.classList.remove("panel-move-right");
-  const panelMoveLeft = function () {
-    contactPanel.classList.add("panel-move-left");
+const openPanel = function () {
+  this.classList.remove("hidden");
+  this.classList.remove("panel-move-right");
+  const panelMoveLeft = () => {
+    this.classList.add("panel-move-left");
   };
   setTimeout(panelMoveLeft, 100);
 };
@@ -82,9 +51,6 @@ const closePanel = function () {
   setTimeout(hiddenPanel, 600);
   panels.forEach((p) => p.classList.remove("panel-move-left"));
   panels.forEach((p) => p.classList.add("panel-move-right"));
-};
-
-const overlayDisactive = function () {
   const removeOverlay = function () {
     overlay.classList.remove("overlay--active");
   };
@@ -110,6 +76,7 @@ const moveUp = function (e) {
   currentBoxContent.classList.remove("move-down");
   currentBoxContent.classList.add("move-up");
 
+  currentViewMoreBtn.classList.remove("view-more_init");
   currentViewMoreBtn.classList.add("view-more_visible");
   currentViewMoreBtn.classList.remove("view-more_hidden");
 };
@@ -149,9 +116,9 @@ displayYear();
 // EVENT LISTENERS
 
 // Panels opening and overlay appearing
-box1.addEventListener("click", openAboutPanel);
-box2.addEventListener("click", openResumePanel);
-box3.addEventListener("click", openContactPanel);
+box1.addEventListener("click", openPanel.bind(aboutPanel));
+box2.addEventListener("click", openPanel.bind(resumePanel));
+box3.addEventListener("click", openPanel.bind(contactPanel));
 
 boxes.addEventListener("click", overlayActive);
 
@@ -171,4 +138,11 @@ panelCloseEl.forEach((el) =>
 
 panelCloseEl.forEach((el) => el.addEventListener("click", closePanel));
 
-panelCloseEl.forEach((el) => el.addEventListener("click", overlayDisactive));
+document.addEventListener("keydown", function (e) {
+  if (e.key === "Escape" && overlay.classList.contains("overlay--active")) {
+    closePanel();
+    console.log("ESC press!");
+  }
+});
+
+overlay.addEventListener("click", closePanel);
