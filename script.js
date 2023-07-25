@@ -20,6 +20,7 @@ const body = document.body;
 const viewMoreBtn = document.querySelectorAll(".view_more__btn");
 const panelCloseEl = document.querySelectorAll(".panel-close img");
 const yearField = document.getElementById("year");
+const arrowDown = document.getElementById("down-arrow");
 
 // FUNCTIONS
 
@@ -146,3 +147,10 @@ document.addEventListener("keydown", function (e) {
 });
 
 overlay.addEventListener("click", closePanel);
+
+// Arrow down
+
+arrowDown.addEventListener("click", function () {
+  boxes.getBoundingClientRect();
+  boxes.scrollIntoView({ behavior: "smooth" });
+});

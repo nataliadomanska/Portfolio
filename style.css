@@ -7,6 +7,10 @@
   margin: 0;
 }
 
+:root {
+  color-scheme: light only;
+}
+
 html {
   height: 100%;
 }
@@ -56,6 +60,7 @@ header {
   width: 50px;
   margin-top: 20px;
   margin-left: 20px;
+  cursor: pointer;
 }
 
 #down-arrow i.fa {
