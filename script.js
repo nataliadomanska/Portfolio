@@ -22,6 +22,7 @@ const panelCloseEl = document.querySelectorAll(".panel-close img");
 const yearField = document.getElementById("year");
 const arrowDown = document.querySelector(".fa-circle-down");
 const panelUp = document.querySelectorAll(".fa-circle-up");
+const socialIcons = document.querySelectorAll(".social-element");
 
 // FUNCTIONS
 
@@ -130,6 +131,24 @@ const panelUpClick = function () {
   }, 1000);
 };
 
+// Social icons rotation
+
+const socialRotationIn = function (e) {
+  if ((e.target.classList.contains = "social-element")) {
+    const currentSocialIcon = e.target;
+    currentSocialIcon.classList.add("social-rotation-in");
+    currentSocialIcon.classList.remove("social-rotation-out");
+  }
+};
+
+const socialRotationOut = function (e) {
+  if ((e.target.classList.contains = "social-element")) {
+    const currentSocialIcon = e.target;
+    currentSocialIcon.classList.remove("social-rotation-in");
+    currentSocialIcon.classList.add("social-rotation-out");
+  }
+};
+
 // Year display
 
 const displayYear = function () {
@@ -187,3 +206,9 @@ arrowDown.addEventListener("click", arrowDownClick);
 // Panel up functionality
 
 panelUp.forEach((p) => p.addEventListener("click", panelUpClick));
+
+// Social icons rotation
+
+socialIcons.forEach((s) => s.addEventListener("mouseover", socialRotationIn));
+
+socialIcons.forEach((s) => s.addEventListener("mouseout", socialRotationOut));

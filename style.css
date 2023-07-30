@@ -88,6 +88,10 @@ header {
   transform: translateX(-2.1vw);
 }
 
+.social a img {
+  width: 70px;
+}
+
 /* My name */
 h1 {
   color: rgb(31, 32, 65);
@@ -549,6 +553,15 @@ strong {
   transition: 0.6s;
 }
 
+.social-rotation-in {
+  transform: rotate(360deg);
+  transition: 0.3s;
+}
+
+.social-rotation-out {
+  transform: rotate(-360deg);
+  transition: 0.3s;
+}
 /* MEDIA QUERIES */
 
 @media only screen and (max-width: 350px) {
@@ -675,7 +688,7 @@ strong {
     width: 220px;
   }
   .social a img {
-    width: 70px;
+    width: 60px;
   }
 }
 
