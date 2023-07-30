@@ -20,7 +20,8 @@ const body = document.body;
 const viewMoreBtn = document.querySelectorAll(".view_more__btn");
 const panelCloseEl = document.querySelectorAll(".panel-close img");
 const yearField = document.getElementById("year");
-const arrowDown = document.getElementById("down-arrow");
+const arrowDown = document.querySelector(".fa-circle-down");
+const panelUp = document.querySelectorAll(".fa-circle-up");
 
 // FUNCTIONS
 
@@ -101,6 +102,34 @@ const moveDown = function (e) {
   currentViewMoreBtn.classList.remove("view-more_visible");
 };
 
+// Arrow down click
+
+const arrowDownClick = function () {
+  boxes.getBoundingClientRect();
+  boxes.scrollIntoView({ behavior: "smooth" });
+  this.style.color = "#782347";
+  setTimeout(() => {
+    this.style.color = "#1f2041";
+  }, 1000);
+};
+
+// Panel up click
+
+const panelUpClick = function () {
+  panels.forEach((p) =>
+    p.scroll({
+      top: 0,
+      behavior: "smooth",
+    })
+  );
+  panelUp.forEach((p) => {
+    p.style.opacity = "1";
+  });
+  setTimeout(() => {
+    panelUp.forEach((p) => (p.style.opacity = "0.2"));
+  }, 1000);
+};
+
 // Year display
 
 const displayYear = function () {
@@ -143,9 +172,18 @@ document.addEventListener("keydown", function (e) {
 
 overlay.addEventListener("click", closePanel);
 
-// Arrow down
+// Arrow down functionality
 
-arrowDown.addEventListener("click", function () {
-  boxes.getBoundingClientRect();
-  boxes.scrollIntoView({ behavior: "smooth" });
+arrowDown.addEventListener("mouseover", function () {
+  this.style.color = "#782347";
 });
+
+arrowDown.addEventListener("mouseleave", function () {
+  this.style.color = "#1f2041";
+});
+
+arrowDown.addEventListener("click", arrowDownClick);
+
+// Panel up functionality
+
+panelUp.forEach((p) => p.addEventListener("click", panelUpClick));

@@ -283,6 +283,7 @@ hr {
   position: absolute;
   bottom: 0px;
   left: -4rem;
+  cursor: pointer;
 }
 
 .panel-up i {
@@ -290,6 +291,10 @@ hr {
   font-size: 50px;
   text-align: center;
   opacity: 0.2;
+}
+
+.panel-up i:hover {
+  opacity: 1;
 }
 
 /* #ABOUT panel */
