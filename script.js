@@ -53,6 +53,7 @@ const panelCloseElPassive = function () {
 const closePanel = function () {
   const hiddenPanel = function () {
     panels.forEach((p) => p.classList.add("hidden"));
+    viewMoreBtn.forEach((btn) => btn.classList.add("view-more_init"));
   };
   setTimeout(hiddenPanel, 600);
   panels.forEach((p) => p.classList.remove("panel-move-left"));

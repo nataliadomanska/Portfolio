@@ -19,6 +19,7 @@ body {
   font-family: "Poppins", sans-serif;
   color: white;
   position: relative;
+  overflow-x: hidden;
 }
 
 a {
@@ -499,11 +500,6 @@ strong {
   display: none;
 }
 
-.view-more_hidden {
-  opacity: 0;
-  transition: 0.5s;
-}
-
 .view-more_visible {
   opacity: 1;
   transition: 0.5s;
@@ -521,7 +517,6 @@ strong {
   transition: 0.2s 0.5s;
 }
 
-/* add to #main */
 .move-left {
   transform: translateX(-50rem);
   transition: 0.6s;
@@ -532,19 +527,8 @@ strong {
   transition: 0.6s;
 }
 
-/* Add to body tag */
 .overflow-hidden {
   overflow: hidden;
-}
-
-.move-up {
-  transform: translateY(-25px);
-  transition: 0.3s;
-}
-
-.move-down {
-  transform: translateY(0px);
-  transition: 0.3s;
 }
 
 .panel-open {
@@ -561,149 +545,23 @@ strong {
 }
 
 /* MEDIA QUERIES */
-@media only screen and (max-width: 600px) {
-  .header-icons {
-    display: flex;
-    flex-wrap: wrap;
-    width: 220px;
-  }
-}
-@media only screen and (max-width: 600px) {
-  #down-arrow i.fa {
-    font-size: 40px;
-    top: 20px;
-    left: 20px;
-  }
-}
-
-@media only screen and (max-width: 600px) {
-  .logo img {
-    width: 220px;
-  }
-}
-
-@media only screen and (max-width: 1400px) {
-  h1 {
-    font-size: 70px;
-  }
-}
-
-@media only screen and (max-width: 1000px) {
-  h1 {
-    font-size: 60px;
-  }
-}
-
-@media only screen and (max-width: 800px) {
-  h1 {
-    font-size: 45px;
-  }
-}
-
-@media only screen and (max-width: 600px) {
-  h1 {
-    font-size: 40px;
-  }
-}
-
-@media only screen and (max-width: 450px) {
-  h1 {
-    font-size: 30px;
-  }
-}
 
 @media only screen and (max-width: 350px) {
   h1 {
     font-size: 20px;
   }
-}
-
-@media only screen and (max-width: 1400px) {
-  .subtitle {
-    font-size: 30px;
-  }
-}
-
-@media only screen and (max-width: 1000px) {
-  .subtitle {
-    font-size: 25px;
-  }
-}
-
-@media only screen and (max-width: 800px) {
-  .subtitle {
-    font-size: 20px;
-  }
-}
-
-@media only screen and (max-width: 600px) {
-  .subtitle {
-    font-size: 18px;
-  }
-}
-
-@media only screen and (max-width: 450px) {
-  .subtitle {
-    font-size: 17px;
-  }
-}
-
-@media only screen and (max-width: 350px) {
   .subtitle {
     font-size: 16px;
   }
 }
 
-@media screen and (max-width: 1200px) {
-  #boxes {
-    grid-template-columns: repeat(1, 1fr);
-    height: 1400px;
+@media only screen and (max-width: 450px) and (min-width: 350px) {
+  .subtitle {
+    font-size: 17px;
   }
-}
 
-@media screen and (max-width: 600px) {
-  #boxes {
-    grid-template-columns: repeat(1, 1fr);
-    height: 1000px;
-  }
-}
-
-@media only screen and (max-width: 600px) {
-  .rotated-text-inner {
-    font-size: 1.7rem;
-  }
-}
-
-@media only screen and (max-width: 600px) {
-  .footer-inner p {
-    font-size: 0.8rem;
-  }
-}
-
-@media only screen and (max-width: 600px) {
-  .box-content h2 {
-    font-size: 0.7em;
-    padding: 1rem 0;
-  }
-}
-
-@media only screen and (max-width: 600px) {
-  .box-content p {
-    font-size: 0.9rem;
-  }
-}
-
-@media only screen and (max-width: 600px) {
-  .box-content b {
-    font-size: 1rem;
-    padding: 0.4rem;
-    margin: 1rem 0;
-  }
-}
-
-@media only screen and (max-width: 600px) {
-  .social a img {
-    width: 70px;
+  h1 {
+    font-size: 30px;
   }
 }
 
@@ -717,15 +575,9 @@ strong {
   .panel-inner {
     border: 0px;
   }
-}
-
-@media only screen and (max-width: 480px) {
   .panel-rotated-text {
     display: none;
   }
-}
-
-@media only screen and (max-width: 480px) {
   #about .panel-close {
     right: 0px;
     left: 0px;
@@ -734,9 +586,6 @@ strong {
     background-color: #1f2041;
     margin: 0 auto;
   }
-}
-
-@media only screen and (max-width: 480px) {
   #resume .panel-close {
     right: 0px;
     left: 0px;
@@ -745,9 +594,6 @@ strong {
     background-color: rgb(66, 32, 64);
     margin: 0 auto;
   }
-}
-
-@media only screen and (max-width: 480px) {
   #contact .panel-close {
     right: 0px;
     left: 0px;
@@ -756,16 +602,10 @@ strong {
     background-color: rgb(120, 35, 71);
     margin: 0 auto;
   }
-}
-
-@media only screen and (max-width: 480px) {
   .panel-close img {
     display: block;
     margin: 0 auto;
   }
-}
-
-@media only screen and (max-width: 480px) {
   .panel-up {
     right: 0px;
     left: 0px;
@@ -775,31 +615,111 @@ strong {
     margin-bottom: -5px;
     background-color: #1f2041;
   }
-}
-
-@media only screen and (max-width: 480px) {
   #resume .panel-up {
     background-color: rgb(66, 32, 64);
   }
-}
-
-@media only screen and (min-width: 480px) {
-  .panel-up {
-    margin-bottom: 10px;
-  }
-}
-
-@media only screen and (max-width: 480px) {
   #contact .panel-inner {
     border-bottom: 65px solid rgb(120, 35, 71);
   }
-}
-
-@media only screen and (max-width: 480px) {
   .my-photo {
     width: 90%;
     height: 90%;
     margin-top: 15px;
+  }
+  #about h2 {
+    font-size: 30px;
+    margin: 0;
+  }
+  #contact h2 {
+    font-size: 30px;
+  }
+  #resume h2 {
+    font-size: 30px;
+    margin-top: 50px;
+  }
+  #resume h6 {
+    font-size: 18px;
+  }
+  #resume strong {
+    font-size: 16px;
+  }
+  #resume .resume-date {
+    font-size: 60px;
+    bottom: -15%;
+  }
+  .skills {
+    margin-bottom: 60px;
+  }
+  .description {
+    font-size: 16px;
+    margin-bottom: 40px;
+  }
+  .logo img {
+    width: 180px;
+  }
+}
+
+@media only screen and (max-width: 600px) and (min-width: 450px) {
+  h1 {
+    font-size: 40px;
+  }
+  .subtitle {
+    font-size: 18px;
+  }
+  .logo img {
+    width: 220px;
+  }
+  .social a img {
+    width: 70px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .header-icons {
+    display: flex;
+    flex-wrap: wrap;
+    width: 220px;
+  }
+  #down-arrow i.fa {
+    font-size: 40px;
+    top: 20px;
+    left: 20px;
+  }
+
+  .move-left {
+    transform: translateX(0);
+  }
+  #boxes {
+    grid-template-columns: repeat(1, 1fr);
+    height: 1000px;
+  }
+  .rotated-text-inner {
+    font-size: 1.7rem;
+  }
+  .footer-inner p {
+    font-size: 0.8rem;
+  }
+  .box-content h2 {
+    font-size: 0.7em;
+    padding: 1rem 0;
+  }
+
+  .box-content p {
+    font-size: 0.9rem;
+  }
+  .box-content b {
+    font-size: 1rem;
+    padding: 0.4rem;
+    margin: 1rem 0;
+  }
+}
+
+@media only screen and (max-width: 800px) and (min-width: 600px) {
+  h1 {
+    font-size: 45px;
+  }
+  .subtitle {
+    font-size: 20px;
   }
 }
 
@@ -809,66 +729,57 @@ strong {
   }
 }
 
-@media only screen and (max-width: 480px) {
-  #about h2 {
-    font-size: 30px;
-    margin: 0;
-  }
-}
-
-@media only screen and (max-width: 480px) {
-  #contact h2 {
-    font-size: 30px;
-  }
-}
-
-@media only screen and (max-width: 480px) {
-  #resume h2 {
-    font-size: 30px;
-    margin-top: 50px;
-  }
-}
-
-@media only screen and (max-width: 480px) {
-  #resume h6 {
-    font-size: 18px;
-  }
-}
-
-@media only screen and (max-width: 480px) {
-  #resume strong {
-    font-size: 16px;
-  }
-}
-
-@media only screen and (max-width: 480px) {
-  #resume .resume-date {
+@media only screen and (max-width: 1000px) and (min-width: 800px) {
+  h1 {
     font-size: 60px;
-    bottom: -15%;
   }
-}
-
-@media only screen and (max-width: 480px) {
-  .skills {
-    margin-bottom: 60px;
-  }
-}
-
-@media only screen and (max-width: 1000px) {
-  #about h2 {
-    margin-bottom: 20px;
-  }
-}
-
-@media only screen and (max-width: 480px) {
-  .description {
-    font-size: 16px;
-    margin-bottom: 40px;
+  .subtitle {
+    font-size: 25px;
   }
 }
 
 @media only screen and (min-width: 1100px) {
   .view-more_init {
     opacity: 0;
+  }
+  .view-more_hidden {
+    opacity: 0;
+    transition: 0.5s;
+  }
+  .move-up {
+    transform: translateY(-25px);
+    transition: 0.3s;
+  }
+
+  .move-down {
+    transform: translateY(0px);
+    transition: 0.3s;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .view-more_init {
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  #boxes {
+    grid-template-columns: repeat(1, 1fr);
+    height: 1400px;
+  }
+}
+
+@media only screen and (max-width: 1400px) and (min-width: 1000px) {
+  h1 {
+    font-size: 70px;
+  }
+  .subtitle {
+    font-size: 30px;
+  }
+}
+@media only screen and (max-width: 1400px) and (min-width: 480px) {
+  #about h2 {
+    margin-bottom: 20px;
   }
 }
