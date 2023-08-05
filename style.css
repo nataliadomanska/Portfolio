@@ -698,6 +698,10 @@ strong {
     flex-wrap: wrap;
     width: 220px;
   }
+
+  .social {
+    transform: translateX(0);
+  }
   #down-arrow i.fa {
     font-size: 40px;
     top: 20px;

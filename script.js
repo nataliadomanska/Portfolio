@@ -212,3 +212,5 @@ panelUp.forEach((p) => p.addEventListener("click", panelUpClick));
 socialIcons.forEach((s) => s.addEventListener("mouseover", socialRotationIn));
 
 socialIcons.forEach((s) => s.addEventListener("mouseout", socialRotationOut));
+
+socialIcons.forEach((s) => s.addEventListener("click", socialRotationIn));
