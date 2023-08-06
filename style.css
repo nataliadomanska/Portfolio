@@ -104,7 +104,7 @@ h1 {
 .subtitle {
   color: black;
   opacity: 0.5;
-  font-size: 50px;
+  font-size: 70px;
   font-weight: bold;
   text-align: center;
   padding: 1vw;
@@ -576,7 +576,7 @@ strong {
 
 @media only screen and (max-width: 450px) and (min-width: 350px) {
   .subtitle {
-    font-size: 17px;
+    font-size: 20px;
   }
 
   h1 {
@@ -687,7 +687,7 @@ strong {
     font-size: 40px;
   }
   .subtitle {
-    font-size: 18px;
+    font-size: 27px;
   }
   .logo img {
     width: 220px;
@@ -746,7 +746,7 @@ strong {
     font-size: 45px;
   }
   .subtitle {
-    font-size: 20px;
+    font-size: 30px;
   }
 }
 
@@ -761,7 +761,7 @@ strong {
     font-size: 60px;
   }
   .subtitle {
-    font-size: 25px;
+    font-size: 35px;
   }
 }
 
@@ -802,7 +802,7 @@ strong {
     font-size: 70px;
   }
   .subtitle {
-    font-size: 30px;
+    font-size: 40px;
   }
 }
 @media only screen and (max-width: 1400px) and (min-width: 480px) {
