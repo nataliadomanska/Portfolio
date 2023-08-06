@@ -610,7 +610,7 @@ strong {
     left: 0px;
     width: 100%;
     height: 65px;
-    background-color: #500454;
+    background-color: #803347;
     margin: 0 auto;
   }
   #contact .panel-close {
@@ -618,7 +618,7 @@ strong {
     left: 0px;
     width: 100%;
     height: 65px;
-    background-color: #69015c;
+    background-color: #5e0920;
     margin: 0 auto;
   }
   .panel-close img {
@@ -639,10 +639,10 @@ strong {
   }
 
   #resume .panel-up {
-    background-color: #500454;
+    background-color: #803347;
   }
   #contact .panel-inner {
-    border-bottom: 65px solid #69015c;
+    border-bottom: 65px solid #5e0920;
   }
   .my-photo {
     width: 90%;
