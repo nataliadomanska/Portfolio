@@ -110,7 +110,7 @@ const arrowDownClick = function () {
   boxes.scrollIntoView({ behavior: "smooth" });
   this.style.color = "#782347";
   setTimeout(() => {
-    this.style.color = "#2E0036";
+    this.style.color = "#044D29";
   }, 1000);
 };
 
@@ -198,7 +198,7 @@ arrowDown.addEventListener("mouseover", function () {
 });
 
 arrowDown.addEventListener("mouseleave", function () {
-  this.style.color = "#2E0036";
+  this.style.color = "#044D29";
 });
 
 arrowDown.addEventListener("click", arrowDownClick);
